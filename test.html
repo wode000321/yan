@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="JavaScript">
+	  function appendText() {
+	    var para = document.createElement("p");
+		var divA = document.getElementById("divTest");
+		divA.appendChild(para);
+		
+		var txt = document.createTextNode("Hello World");
+		para.appendChild(txt);
+	  }
+	  window.onload = appendText;
+	</script>
+  </head>
+  
+  <body>
+    <div id="divTest">
+	</div>
+  </body>
+</html>
